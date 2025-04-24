@@ -103,7 +103,7 @@ const About = () => {
                             <h1 className='text-white text-3xl 2xl:text-5xl'>
                                 Service to Support
                             </h1>
-                            <p className='text-white/40 font-light 2xl:text-xl'>Provide comprehensive solutions as mobile apps often rely on data storage, authentication, etc.</p>
+                            <p className='text-white/40 font-light 2xl:text-xl'>Provide comprehensive backend solutions as mobile apps often rely on data storage, authentication, etc.</p>
                         </SpotlightCard>
                     </motion.div>
 

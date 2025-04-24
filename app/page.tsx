@@ -3,7 +3,8 @@ import {
   Hero,
   Skill,
   About,
-} from "./components";
+  TimelineSection
+} from "./HighOrderComponents";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       </div>
       <Skill />
       <About />
+      <TimelineSection />
     </main>
   );
 }
