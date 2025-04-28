@@ -3,20 +3,24 @@ import {
   Hero,
   Skill,
   About,
-  TimelineSection
+  TimelineSection,
+  Techstack,
+  Achievement
 } from "./HighOrderComponents";
 import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="relative z-0 bg-[#171717]">
+    <main className="relative z-0">
       <NavBar />
       <div className="h-screen">
         <Hero />
       </div>
       <Skill />
       <About />
+      <Techstack/>
       <TimelineSection />
+      <Achievement />
     </main>
   );
 }

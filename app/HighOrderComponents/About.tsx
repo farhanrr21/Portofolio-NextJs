@@ -14,7 +14,7 @@ const actor = Actor({ weight: '400', subsets: ["latin"] })
 
 const About = () => {
     return (
-        <section className='relative h-screen bg-gradient-to-b from-[#09122C] via-[#09122C] to-[#10204F] px-8 md:px-18 2xl:px-32 justify-around select-none'>
+        <section className='hidden md:relative h-screen bg-gradient-to-b from-[#09122C] via-[#09122C] to-[#10204F] px-8 md:px-18 2xl:px-32 justify-around select-none'>
             <div className='grid grid-cols-2 items-center h-full'>
 
                 {/* Content#1 */}
@@ -41,17 +41,18 @@ const About = () => {
                 </motion.div>
 
                 {/* Content#2 */}
-                <div className={`flex flex-col items-center justify-center ml-64  ${afacade.className} font-medium z-5`}>
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{
-                            type: "spring",
-                            duration: 2,
-                            stiffness: 20,
-                            damping: 10
-                        }}
+                <motion.div
+                    initial={{ opacity: 0, x: "100%" }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        type: "spring",
+                        duration: 2,
+                        stiffness: 20,
+                        damping: 10
+                    }}
+                    className={`flex flex-col items-center justify-center ml-64  ${afacade.className} font-medium z-5`}>
+                    <div
                         className='mb-10'>
                         <GradientText
                             colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
@@ -61,17 +62,8 @@ const About = () => {
                         >
                             Services
                         </GradientText>
-                    </motion.div>
-                    <motion.div
-                        initial={{ opacity: 0, x: "100%" }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{
-                            type: "spring",
-                            duration: 2,
-                            stiffness: 20,
-                            damping: 10
-                        }}
+                    </div>
+                    <div
                         className='grid grid-cols-1 gap-4 2xl:gap-8'>
                         <SpotlightCard className="w-100 h-60 2xl:h-72 2xl:w-120 flex flex-col gap-3 2xl:gap-5" spotlightColor="rgba(255, 255, 255, 0.1)">
                             <FiCodesandbox
@@ -105,11 +97,8 @@ const About = () => {
                             </h1>
                             <p className='text-white/40 font-light 2xl:text-xl'>Provide comprehensive backend solutions as mobile apps often rely on data storage, authentication, etc.</p>
                         </SpotlightCard>
-                    </motion.div>
-
-
-
-                </div>
+                    </div>
+                </motion.div>
 
             </div>
             <motion.div

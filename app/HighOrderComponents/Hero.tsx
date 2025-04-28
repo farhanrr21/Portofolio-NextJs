@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import ShaderGrad from './ShaderGrad'
 import RotatingText from '../animations/RotatingText'
+import { CiShare1 } from 'react-icons/ci'
 
 const Hero = () => {
     return (
@@ -31,9 +32,9 @@ const Hero = () => {
                 </div>
 
 
-                <button className='flex flex-row gap-4 items-center my-12 text-center font-medium bg-[#872341] rounded-xl transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-red-600 duration-300 px-8 py-4 shadow-xl shadow-black/55'>
+                <button className='flex flex-row gap-4 items-center my-12 text-center font-medium bg-white text-black rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300 px-8 py-4 shadow-xl shadow-black/55'>
                     <span className='font-geist text-2xl'>Get in touch</span>
-                    <Image src="/vercel.svg" alt="arrow" width={24} height={24} />
+                    <CiShare1 size={24}></CiShare1>
                 </button>
             </div>
         </section>

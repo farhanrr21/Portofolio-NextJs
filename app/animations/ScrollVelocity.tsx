@@ -15,7 +15,7 @@ interface VelocityMapping {
 }
 
 interface VelocityTextProps {
-    children: React.ReactNode;
+    children: React.ReactNode; // Accepts any valid React element (including <img>, <div>, etc.)
     baseVelocity: number;
     scrollContainerRef?: React.RefObject<HTMLElement>;
     className?: string;
@@ -31,7 +31,7 @@ interface VelocityTextProps {
 
 interface ScrollVelocityProps {
     scrollContainerRef?: React.RefObject<HTMLElement>;
-    texts: string[];
+    texts: React.ReactNode[]; // Can be any array of elements
     velocity?: number;
     className?: string;
     damping?: number;
@@ -134,9 +134,9 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
             baseX.set(baseX.get() + moveBy);
         });
 
-        const spans = [];
+        const elements = [];
         for (let i = 0; i < numCopies!; i++) {
-            spans.push(
+            elements.push(
                 <span
                     className={`flex-shrink-0 ${className}`}
                     key={i}
@@ -156,7 +156,7 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
                     className={`${scrollerClassName} flex whitespace-nowrap text-center font-sans text-4xl font-bold tracking-[-0.02em] drop-shadow md:text-[5rem] md:leading-[5rem]`}
                     style={{ x, ...scrollerStyle }}
                 >
-                    {spans}
+                    {elements}
                 </motion.div>
             </div>
         );
@@ -164,7 +164,7 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
 
     return (
         <section>
-            {texts.map((text: string, index: number) => (
+            {texts.map((element, index) => (
                 <VelocityText
                     key={index}
                     className={className}
@@ -179,7 +179,7 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
                     parallaxStyle={parallaxStyle}
                     scrollerStyle={scrollerStyle}
                 >
-                    {text}&nbsp;
+                    {element}
                 </VelocityText>
             ))}
         </section>

@@ -24,7 +24,7 @@ const NavBar = () => {
     }
 
     return (
-        <nav className='w-full text-white fixed top-0 z-20 backdrop-blur-md rounded-bl-xl rounded-br-xl shadow-xl'>
+        <nav className='w-full text-white bg-black/20 fixed top-0 z-20 backdrop-blur-md rounded-bl-xl rounded-br-xl shadow-xl'>
             {/* Desktop */}
             <div className='hidden md:flex py-4 items-center justify-between mx-auto max-w-7xl'>
                 <Image
