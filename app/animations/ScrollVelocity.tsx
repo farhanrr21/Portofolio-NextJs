@@ -1,13 +1,5 @@
 import React, { useRef, useLayoutEffect, useState } from "react";
-import {
-    motion,
-    useScroll,
-    useSpring,
-    useTransform,
-    useMotionValue,
-    useVelocity,
-    useAnimationFrame,
-} from "framer-motion";
+import { motion, useAnimationFrame, useMotionValue, useSpring } from "framer-motion";
 
 interface VelocityMapping {
     input: [number, number];
@@ -15,9 +7,8 @@ interface VelocityMapping {
 }
 
 interface VelocityTextProps {
-    children: React.ReactNode; // Accepts any valid React element (including <img>, <div>, etc.)
+    children: React.ReactNode;
     baseVelocity: number;
-    scrollContainerRef?: React.RefObject<HTMLElement>;
     className?: string;
     damping?: number;
     stiffness?: number;
@@ -30,7 +21,6 @@ interface VelocityTextProps {
 }
 
 interface ScrollVelocityProps {
-    scrollContainerRef?: React.RefObject<HTMLElement>;
     texts: React.ReactNode[]; // Can be any array of elements
     velocity?: number;
     className?: string;
@@ -62,7 +52,6 @@ function useElementWidth(ref: React.RefObject<HTMLElement | null>): number {
 }
 
 export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
-    scrollContainerRef,
     texts = [],
     velocity = 100,
     className = "",
@@ -78,7 +67,6 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
     function VelocityText({
         children,
         baseVelocity = velocity,
-        scrollContainerRef,
         className = "",
         damping,
         stiffness,
@@ -90,21 +78,6 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
         scrollerStyle,
     }: VelocityTextProps) {
         const baseX = useMotionValue(0);
-        const scrollOptions = scrollContainerRef
-            ? { container: scrollContainerRef }
-            : {};
-        const { scrollY } = useScroll(scrollOptions);
-        const scrollVelocity = useVelocity(scrollY);
-        const smoothVelocity = useSpring(scrollVelocity, {
-            damping: damping ?? 50,
-            stiffness: stiffness ?? 400,
-        });
-        const velocityFactor = useTransform(
-            smoothVelocity,
-            velocityMapping?.input || [0, 1000],
-            velocityMapping?.output || [0, 5],
-            { clamp: false }
-        );
 
         const copyRef = useRef<HTMLSpanElement>(null);
         const copyWidth = useElementWidth(copyRef);
@@ -115,23 +88,15 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
             return mod + min;
         }
 
-        const x = useTransform(baseX, (v) => {
-            if (copyWidth === 0) return "0px";
-            return `${wrap(-copyWidth, 0, v)}px`;
+        const x = useSpring(baseX, {
+            damping: damping ?? 50,
+            stiffness: stiffness ?? 400,
         });
 
-        const directionFactor = useRef<number>(1);
+        // For continuous animation without scroll input
         useAnimationFrame((t, delta) => {
-            let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
-
-            if (velocityFactor.get() < 0) {
-                directionFactor.current = -1;
-            } else if (velocityFactor.get() > 0) {
-                directionFactor.current = 1;
-            }
-
-            moveBy += directionFactor.current * moveBy * velocityFactor.get();
-            baseX.set(baseX.get() + moveBy);
+            let moveBy = baseVelocity * (delta / 1000);
+            baseX.set(baseX.get() + moveBy); // Move the element continuously
         });
 
         const elements = [];
@@ -168,12 +133,8 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
                 <VelocityText
                     key={index}
                     className={className}
-                    baseVelocity={index % 2 !== 0 ? -velocity : velocity}
-                    scrollContainerRef={scrollContainerRef}
-                    damping={damping}
-                    stiffness={stiffness}
+                    baseVelocity={index % 2 !== 0 ? -velocity : velocity} // To change the direction for different elements
                     numCopies={numCopies}
-                    velocityMapping={velocityMapping}
                     parallaxClassName={parallaxClassName}
                     scrollerClassName={scrollerClassName}
                     parallaxStyle={parallaxStyle}

@@ -14,7 +14,7 @@ const actor = Actor({ weight: '400', subsets: ["latin"] })
 
 const About = () => {
     return (
-        <section className='hidden md:relative h-screen bg-gradient-to-b from-[#09122C] via-[#09122C] to-[#10204F] px-8 md:px-18 2xl:px-32 justify-around select-none'>
+        <section className='hidden md:flex relative h-screen bg-gradient-to-b from-[#09122C] via-[#09122C] to-[#10204F] px-8 md:px-18 2xl:px-32 justify-around select-none'>
             <div className='grid grid-cols-2 items-center h-full'>
 
                 {/* Content#1 */}
@@ -24,7 +24,7 @@ const About = () => {
                     viewport={{ once: true }}
                     transition={{
                         ease: "easeInOut",
-                        duration: 2,
+                        duration: 1,
                         stiffness: 20,
                         damping: 10
                     }}
@@ -47,7 +47,7 @@ const About = () => {
                     viewport={{ once: true }}
                     transition={{
                         type: "spring",
-                        duration: 2,
+                        duration: 1,
                         stiffness: 20,
                         damping: 10
                     }}

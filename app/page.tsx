@@ -5,13 +5,14 @@ import {
   About,
   TimelineSection,
   Techstack,
-  Achievement
+  Achievement,
+  Contact
 } from "./HighOrderComponents";
 import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="relative z-0">
+    <main className="relative z-0 bg-black">
       <NavBar />
       <div className="h-screen">
         <Hero />
@@ -21,7 +22,7 @@ export default function Home() {
       <Techstack/>
       <TimelineSection />
       <Achievement />
-    </main>
+      <Contact />    </main>
   );
 }
 
