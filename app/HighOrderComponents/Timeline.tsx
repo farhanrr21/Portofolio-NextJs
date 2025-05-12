@@ -1,6 +1,7 @@
+'use client'
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
-
+import ShinyText from "../animations/ShinyText/ShinyText";
 
 const TimelineSection = () => {
   const data = [
@@ -39,16 +40,20 @@ const TimelineSection = () => {
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               + Gained valuable experience in time management and team collaboration
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              + <span className="font-bold">API:</span> Seamless communication between app/website and backend.
-            </div>
           </div>
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🏆 The Outcome
           </h1>
-          <p className="mb-8 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
+          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
             Though we only made it to the top 20 finalists, the experience was incredibly impactful, giving me insights into building apps and competing at a high level.
           </p>
+          <div className="flex flex-row gap-2 mb-8 select-none">
+            <ShinyText text="#Flutter" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#FrontendDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#MobileDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#Hackathon" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+          </div>
+
           <div className="grid grid-cols-2 gap-4">
             <img
               src="./nawasena_header.png"
@@ -118,7 +123,7 @@ const TimelineSection = () => {
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             📚 What I Learned
           </h1>
-          <div className="mb-8 font-semibold">
+          <div className="mb-4 font-semibold">
             <div className="flex items-center gap-2 text-xs text-neutral-700 dark:text-neutral-300 md:text-sm">
               + Backend development with Laravel
             </div>
@@ -128,6 +133,12 @@ const TimelineSection = () => {
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               + How to collaborate on integrating frontend and backend in one project
             </div>
+          </div>
+          <div className="flex flex-row gap-2 mb-8 select-none">
+            <ShinyText text="#Laravel" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#BackendDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#DatabaseDesign" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#WebDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
@@ -171,7 +182,7 @@ const TimelineSection = () => {
             🚀 Capstone Project - Hexa for PT. Cahaya Trans Utama
           </h1>
           <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
-            At the end of the semester, I worked on a capstone project for PT. Cahaya Trans Utama, focusing on improving their loading and unloading process. Our team of 3 — Hoga Cavan Afrinata (Backend), Zidan Romandhon Putra (Frontend), and myself (Full-Stack Developer) — built both a website and Flutter mobile app to streamline real-time data management and enhance staff coordination.
+            At the end of the semester, I worked on a capstone project for PT. Cahaya Trans Utama, focusing on improving their loading and unloading process. Our team of 3 — Hoga Cavan Afrinata (Backend), Zidan Romandhon Putra (Frontend), and myself (Mobile Developer) — built both a website and Flutter mobile app to streamline real-time data management and enhance staff coordination.
           </p>
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🎯 Goal
@@ -182,7 +193,7 @@ const TimelineSection = () => {
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🔍 Key Testing
           </h1>
-          <div className="mb-8">
+          <div className="mb-4">
             <div className="flex items-center gap-2 text-xs text-neutral-700 dark:text-neutral-300 md:text-sm">
               + Functionality: Core features (project, attendance, stockpiles) work flawlessly.
             </div>
@@ -196,9 +207,15 @@ const TimelineSection = () => {
               + API: Seamless communication between app/website and backend.
             </div>
           </div>
+          <div className="flex flex-row gap-2 mb-8 select-none">
+            <ShinyText text="#FullStack" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#Flutter" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#API" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#MobileApp" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+          </div>
 
           <div className="grid grid-cols-2 gap-4">
-          <img
+            <img
               src="./hexa_mobile.png"
               alt="hexa mobile app"
               width={500}
@@ -226,9 +243,9 @@ const TimelineSection = () => {
   ];
 
   return (
-    <div className="relative w-full">
+    <section id="project" className="relative w-full">
       <Timeline data={data} />
-    </div>
+    </section>
   );
 }
 

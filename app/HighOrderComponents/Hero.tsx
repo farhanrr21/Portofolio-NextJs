@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import ShaderGrad from './ShaderGrad'
 import RotatingText from '../animations/RotatingText'
 import { CiShare1 } from 'react-icons/ci'
 import { ShaderGradient, ShaderGradientCanvas } from '@shadergradient/react'
@@ -9,7 +8,7 @@ import { ShaderGradient, ShaderGradientCanvas } from '@shadergradient/react'
 const Hero = () => {
     return (
         
-        <section className='absolute top-0 w-full h-screen z-0'>
+        <section id='hero' className='absolute top-0 w-full h-screen z-0'>
             <ShaderGradientCanvas
                 pointerEvents='none'
                 style={{

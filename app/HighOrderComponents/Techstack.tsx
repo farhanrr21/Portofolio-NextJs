@@ -24,6 +24,7 @@ const Techstack = () => {
                 parallaxClassName='inline block'
                 texts={images}
                 velocity={-100}
+                numCopies={12} 
                 className="text-5xl font-bold text-white whitespace-nowrap"
             />
         </div>

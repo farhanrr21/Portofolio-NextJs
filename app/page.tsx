@@ -6,7 +6,8 @@ import {
   TimelineSection,
   Techstack,
   Achievement,
-  Contact
+  Contact,
+  Footer
 } from "./HighOrderComponents";
 import { motion } from "framer-motion";
 
@@ -19,10 +20,12 @@ export default function Home() {
       </div>
       <Skill />
       <About />
-      <Techstack/>
+      <Techstack />
       <TimelineSection />
       <Achievement />
-      <Contact />    </main>
+      <Contact />
+      <Footer/>
+    </main>
   );
 }
 

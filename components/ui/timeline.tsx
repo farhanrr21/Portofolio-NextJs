@@ -89,7 +89,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           />
         </motion.div>
       </div>
-      <div className="absolute h-1/4 w-1/5 z-9 bottom-0 bg-gradient-to-t from-[#0A132F] to-transparent"></div>
     </div>
   );
 };

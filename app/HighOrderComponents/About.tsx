@@ -14,7 +14,7 @@ const actor = Actor({ weight: '400', subsets: ["latin"] })
 
 const About = () => {
     return (
-        <section className='hidden md:flex relative h-screen bg-gradient-to-b from-[#09122C] via-[#09122C] to-[#10204F] px-8 md:px-18 2xl:px-32 justify-around select-none'>
+        <section id='about' className='hidden md:flex relative h-screen bg-gradient-to-b from-[#09122C] via-[#09122C] to-[#10204F] px-8 md:px-18 2xl:px-32 justify-around select-none'>
             <div className='grid grid-cols-2 items-center h-full'>
 
                 {/* Content#1 */}
@@ -33,7 +33,7 @@ const About = () => {
                     <h1 className='text-4xl 2xl:text-5xl text-gray-500 '>My Name is</h1>
                     <h1 className='text-7xl 2xl:text-[120px] text-white'>Farhan Ryan Rafli</h1>
                     <div className='bg-white h-3 my-14 w-1/4' />
-                    <div className={`${actor.className} text-white/60 text-xl font-light 2xl:text-4xl w-1/2`}>
+                    <div className={`${actor.className} text-white/60 text-xl font-light 2xl:text-3xl w-1/2`}>
                         <p>Enthusiastic computer engineer, self-motivated with high creativity skills, and someone who likes problem solving.
                             <br /><br />
                             Experienced in several organizations that can create good cooperation between teams. Have an interest as a developer, especially in the field of mobile app development, software engineering, and UI UX. </p>

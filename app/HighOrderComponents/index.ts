@@ -6,6 +6,7 @@ import TimelineSection from "./Timeline";
 import Techstack from "./Techstack";
 import Achievement from "./Achievement";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 export {
     NavBar,
@@ -15,5 +16,6 @@ export {
     TimelineSection,
     Techstack,
     Achievement,
-    Contact
+    Contact,
+    Footer
 }
