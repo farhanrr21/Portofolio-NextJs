@@ -58,7 +58,7 @@ const Contact = () => {
     };
 
     return (
-        <section id='contact' className='relative h-screen bg-gradient-to-b flex items-center from-[#22387B] to-[#3E66E1] px-42 2xl:px-80 py-24'>
+        <section id='contact' className='relative h-screen bg-gradient-to-b flex items-center from-[#22387B] to-[#3E66E1] px-42 py-24'>
 
             <div className='absolute inset-0 z-0'>
                 <div className='absolute inset-0 z-1 bg-gradient-to-b from-[#22387B] via-transparent to-[#3E66E1]'></div>
@@ -76,7 +76,7 @@ const Contact = () => {
 
 
 
-            <div className='h-full w-full 2xl:w-2/3 2xl:h-2/3 mx-auto flex flex-row bg-white rounded-2xl shadow-xl shadow-black/30 z-10'>
+            <div className='h-full w-full mx-auto flex flex-row bg-white shadow-xl rounded-2xl shadow-black/30 z-10'>
                 <div className='relative h-full w-2/3'>
                     {/* Success Message */}
                     {isSubmitted && (

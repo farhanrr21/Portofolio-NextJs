@@ -14,8 +14,27 @@ const TimelineSection = () => {
             🚀 Hackathon Project: Nawasena
           </h1>
           <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
-            In April, I joined a hackathon competition called VHack with my teammates Abdul Rozzaq and Djie Valencia Santoso. Our project, Nawasena, was a mobile application aimed at helping university students, fresh graduates, and anyone looking for an internship.
+            In April, I joined a hackathon competition called VHack with my teammates{' '}
+            <a
+              href="https://www.linkedin.com/in/abdulrozzaq/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:underline"
+            >
+              Abdul Rozzaq
+            </a>{' '}
+            and{' '}
+            <a
+              href="https://www.linkedin.com/in/djievalenciasantoso/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:underline"
+            >
+              Djie Valencia Santoso
+            </a>
+            . Our project, Nawasena, was a mobile application aimed at helping university students, fresh graduates, and anyone looking for an internship.
           </p>
+
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🛠 My Role
           </h1>
@@ -49,10 +68,10 @@ const TimelineSection = () => {
             Though we only made it to the top 20 finalists, the experience was incredibly impactful, giving me insights into building apps and competing at a high level.
           </p>
           <div className="flex flex-row gap-2 mb-8 select-none">
-            <ShinyText text="#Flutter" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
-            <ShinyText text="#FrontendDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
-            <ShinyText text="#MobileDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
-            <ShinyText text="#Hackathon" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#Flutter" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
+            <ShinyText text="#FrontendDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
+            <ShinyText text="#MobileDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
+            <ShinyText text="#Hackathon" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
           </div>
 
           <div className="grid grid-cols-2 gap-4">
@@ -96,8 +115,18 @@ const TimelineSection = () => {
             🚀 Internship Project: SPMI Online for PT. Pancasila University
           </h1>
           <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
-            In July-August, I joined an internship at PT. Pancasila University with Luthfi Anis Syafar and Khrisna Fauzan Maulana. Our task: to develop the SPMI Online platform—an Internal Quality Assurance System for the university.
+            In July-August, I joined an internship at PT. Pancasila University with{' '}
+            <a
+              href="https://www.linkedin.com/in/luthfi-anis-syafar-41ba78277/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:underline"
+            >
+              Luthfi Anis Syafar
+            </a>{' '}
+            and Khrisna Fauzan Maulana. Our task: to develop the SPMI Online platform—an Internal Quality Assurance System for the university.
           </p>
+
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🛠 The Challenge
           </h1>
@@ -136,10 +165,10 @@ const TimelineSection = () => {
             </div>
           </div>
           <div className="flex flex-row gap-2 mb-8 select-none">
-            <ShinyText text="#Laravel" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
-            <ShinyText text="#BackendDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
-            <ShinyText text="#DatabaseDesign" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
-            <ShinyText text="#WebDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#Laravel" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
+            <ShinyText text="#BackendDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
+            <ShinyText text="#DatabaseDesign" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
+            <ShinyText text="#WebDevelopment" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
           </div>
 
           <div className="grid grid-cols-2 gap-4">
@@ -183,8 +212,27 @@ const TimelineSection = () => {
             🚀 Capstone Project - Hexa for PT. Cahaya Trans Utama
           </h1>
           <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
-            At the end of the semester, I worked on a capstone project for PT. Cahaya Trans Utama, focusing on improving their loading and unloading process. Our team of 3 — Hoga Cavan Afrinata (Backend), Zidan Romandhon Putra (Frontend), and myself (Mobile Developer) — built both a website and Flutter mobile app to streamline real-time data management and enhance staff coordination.
+            At the end of the semester, I worked on a capstone project for PT. Cahaya Trans Utama, focusing on improving their loading and unloading process. Our team of 3 —{' '}
+            <a
+              href="https://www.linkedin.com/in/afrinata/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:underline"
+            >
+              Hoga Cavan Afrinata
+            </a>{' '}
+            (Backend),{' '}
+            <a
+              href="https://www.linkedin.com/in/zidanerp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:underline"
+            >
+              Zidan Romandhon Putra
+            </a>{' '}
+            (Frontend), and myself (Mobile Developer) — built both a website and Flutter mobile app to streamline real-time data management and enhance staff coordination.
           </p>
+
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🎯 Goal
           </h1>
@@ -209,10 +257,10 @@ const TimelineSection = () => {
             </div>
           </div>
           <div className="flex flex-row gap-2 mb-8 select-none">
-            <ShinyText text="#FullStack" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
-            <ShinyText text="#Flutter" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
-            <ShinyText text="#API" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
-            <ShinyText text="#MobileApp" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold"/>
+            <ShinyText text="#FullStack" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
+            <ShinyText text="#Flutter" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
+            <ShinyText text="#API" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
+            <ShinyText text="#MobileApp" disabled={false} speed={3} className="border border-gray py-2 px-4 rounded-full font-bold" />
           </div>
 
           <div className="grid grid-cols-2 gap-4">

@@ -47,7 +47,7 @@ const Hero = () => {
                 </div>
 
 
-                <button className='flex flex-row gap-4 items-center my-12 text-center font-medium bg-white text-black rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300 px-8 py-4 shadow-xl shadow-black/55'>
+                <button onClick={() => { document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) }} className='flex flex-row gap-4 items-center my-12 text-center font-medium bg-white text-black rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300 px-8 py-4 shadow-xl shadow-black/55'>
                     <span className='font-geist text-2xl'>Get in touch</span>
                     <CiShare1 size={24}></CiShare1>
                 </button>
