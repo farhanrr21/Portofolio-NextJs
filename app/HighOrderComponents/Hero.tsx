@@ -1,13 +1,12 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
 import RotatingText from '../animations/RotatingText'
 import { CiShare1 } from 'react-icons/ci'
 import { ShaderGradient, ShaderGradientCanvas } from '@shadergradient/react'
 
 const Hero = () => {
     return (
-        
+
         <section id='hero' className='absolute top-0 w-full h-screen z-0'>
             <ShaderGradientCanvas
                 pointerEvents='none'
@@ -26,11 +25,12 @@ const Hero = () => {
             </ShaderGradientCanvas>
             <div className='hidden md:flex absolute inset-0 flex-col justify-center items-start max-w-7xl mx-auto text-white '>
                 <h1 className='font-sans text-4xl my-4'>
-                    I'm here to help turn your ideas
+                    I&apos;m here to help turn your ideas
                 </h1>
+
                 <div className='flex flex-row min-h-24'>
                     <h1 className='font-sans text-7xl'>
-                        Into 
+                        Into
                     </h1>
                     <RotatingText
                         texts={['an Inspiring Product', 'an Innovative Apps', 'a Robust Software', 'an Amazing Service', 'an Elegant Design']}

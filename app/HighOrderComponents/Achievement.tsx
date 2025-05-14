@@ -59,7 +59,7 @@ const Achievement = () => {
                         <h2 className='text-white text-xl font-light 2xl:text-xl'>Universitas Gadjah Mada, Yogyakarta</h2>
                     </div>
                     <p className='text-white/40 font-light 2xl:text-xl'>
-                        Secured second place in the Fordigi Hackathon, showcasing our team's ability to create a valuable, real-world solution under time constraints.
+                        Secured second place in the Fordigi Hackathon, showcasing our team&apos;s ability to create a valuable, real-world solution under time constraints.
                     </p>
                 </SpotlightCard>
             </div>

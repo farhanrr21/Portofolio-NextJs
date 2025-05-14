@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect, useState } from "react";
+import React, { useRef } from "react";
 import { motion, useAnimationFrame, useMotionValue, useSpring } from "framer-motion";
 
 interface VelocityMapping {
@@ -34,31 +34,11 @@ interface ScrollVelocityProps {
     scrollerStyle?: React.CSSProperties;
 }
 
-function useElementWidth(ref: React.RefObject<HTMLElement | null>): number {
-    const [width, setWidth] = useState(0);
-
-    useLayoutEffect(() => {
-        function updateWidth() {
-            if (ref.current) {
-                setWidth(ref.current.offsetWidth);
-            }
-        }
-        updateWidth();
-        window.addEventListener("resize", updateWidth);
-        return () => window.removeEventListener("resize", updateWidth);
-    }, [ref]);
-
-    return width;
-}
-
 export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
     texts = [],
     velocity = 100,
     className = "",
-    damping = 50,
-    stiffness = 400,
     numCopies = 8,
-    velocityMapping = { input: [0, 1000], output: [0, 5] },
     parallaxClassName,
     scrollerClassName,
     parallaxStyle,
@@ -71,7 +51,6 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
         damping,
         stiffness,
         numCopies,
-        velocityMapping,
         parallaxClassName,
         scrollerClassName,
         parallaxStyle,
@@ -80,13 +59,6 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
         const baseX = useMotionValue(0);
 
         const copyRef = useRef<HTMLSpanElement>(null);
-        const copyWidth = useElementWidth(copyRef);
-
-        function wrap(min: number, max: number, v: number): number {
-            const range = max - min;
-            const mod = (((v - min) % range) + range) % range;
-            return mod + min;
-        }
 
         const x = useSpring(baseX, {
             damping: damping ?? 50,
@@ -95,7 +67,7 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
 
         // For continuous animation without scroll input
         useAnimationFrame((t, delta) => {
-            let moveBy = baseVelocity * (delta / 1000);
+            const moveBy = baseVelocity * (delta / 1000);
             baseX.set(baseX.get() + moveBy); // Move the element continuously
         });
 
