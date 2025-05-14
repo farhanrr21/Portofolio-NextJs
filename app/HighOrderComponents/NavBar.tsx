@@ -48,15 +48,16 @@ const NavBar = () => {
                     alt='logo'
                 />
 
-                <ul className='flex flex-row p-4 gap-10 text-xl font-medium'>
+                <ul className="flex flex-row p-4 gap-10 text-xl font-medium">
                     {navlink.map((link, index) => (
-                        <li className='cursor-pointer ' key={index}>
+                        <li className="cursor-pointer transform transition-all duration-300 hover:scale-105 hover:bg-white hover:text-black px-4 py-2 rounded-full" key={index}>
                             <a href={link.href} onClick={handleLinkClick}>
                                 <p>{link.label}</p>
                             </a>
                         </li>
                     ))}
                 </ul>
+
             </div>
 
             {/* Smartphone */}
