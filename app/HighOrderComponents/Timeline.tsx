@@ -13,7 +13,7 @@ const TimelineSection = () => {
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🚀 Hackathon Project: Nawasena
           </h1>
-          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
+          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-300 text-justify">
             In April, I joined a hackathon competition called VHack with my teammates{' '}
             <a
               href="https://www.linkedin.com/in/abdulrozzaq/"
@@ -38,33 +38,33 @@ const TimelineSection = () => {
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🛠 My Role
           </h1>
-          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
+          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-300 text-justify">
             I was responsible for building the frontend using Flutter. While my teammates handled design and business, I learned a lot about UI/UX slicing, managing my time effectively, and solving complex problems under pressure.
           </p>
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🎯 What We Built
           </h1>
-          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
+          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-300 text-justify">
             The app aimed to connect job seekers with companies and focusing on facilitate internship opportunities.
           </p>
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             📚 What I Learned
           </h1>
           <div className="mb-4">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 dark:text-neutral-300 md:text-sm">
+            <div className="flex items-center gap-2 text-xs text-neutral-300 md:text-sm">
               + Mastered Flutter for mobile development
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs md:text-sm text-neutral-300">
               + Worked under pressure in a competitive environment
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs md:text-sm text-neutral-300">
               + Gained valuable experience in time management and team collaboration
             </div>
           </div>
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🏆 The Outcome
           </h1>
-          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
+          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-300 text-justify">
             Though we only made it to the top 20 finalists, the experience was incredibly impactful, giving me insights into building apps and competing at a high level.
           </p>
           <div className="flex flex-row gap-2 mb-8 select-none">
@@ -114,7 +114,7 @@ const TimelineSection = () => {
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🚀 Internship Project: SPMI Online for PT. Pancasila University
           </h1>
-          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
+          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-300 text-justify">
             In July-August, I joined an internship at PT. Pancasila University with{' '}
             <a
               href="https://www.linkedin.com/in/luthfi-anis-syafar-41ba78277/"
@@ -130,23 +130,23 @@ const TimelineSection = () => {
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🛠 The Challenge
           </h1>
-          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
+          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-300 text-justify">
             The project was based on a website and developed using Laravel. As we collaborated with the University Pancasila student team, we were unsure at first how to approach it due to new concepts and technologies. But with the support of our mentors and teammates, we successfully built all the required features.
           </p>
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🎯 What We Built
           </h1>
           <div className="mb-4 font-semibold">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 dark:text-neutral-300 md:text-sm">
+            <div className="flex items-center gap-2 text-xs  text-neutral-300 md:text-sm">
               + Complex database design
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs  md:text-sm text-neutral-300">
               + Answer and question feature
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs  md:text-sm text-neutral-300">
               + Data visualization
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs  md:text-sm text-neutral-300">
               + Excel file data transfer
             </div>
           </div>
@@ -154,13 +154,13 @@ const TimelineSection = () => {
             📚 What I Learned
           </h1>
           <div className="mb-4 font-semibold">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 dark:text-neutral-300 md:text-sm">
+            <div className="flex items-center gap-2 text-xs  text-neutral-300 md:text-sm">
               + Backend development with Laravel
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs  md:text-sm text-neutral-300">
               + Routing, sessions, and database design for the web
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs  md:text-sm text-neutral-300">
               + How to collaborate on integrating frontend and backend in one project
             </div>
           </div>
@@ -211,7 +211,7 @@ const TimelineSection = () => {
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🚀 Capstone Project - Hexa for PT. Cahaya Trans Utama
           </h1>
-          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
+          <p className="mb-4 text-xs md:text-sm font-normal  text-neutral-300 text-justify">
             At the end of the semester, I worked on a capstone project for PT. Cahaya Trans Utama, focusing on improving their loading and unloading process. Our team of 3 —{' '}
             <a
               href="https://www.linkedin.com/in/afrinata/"
@@ -236,23 +236,23 @@ const TimelineSection = () => {
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🎯 Goal
           </h1>
-          <p className="mb-4 text-xs md:text-sm font-normal text-neutral-700 dark:text-neutral-300 text-justify">
+          <p className="mb-4 text-xs md:text-sm font-normal  text-neutral-300 text-justify">
             The app and website, named Hexa, simplify project management, attendance, and stockpile data, solving real-time challenges at the company.
           </p>
           <h1 className="mb-4 text-sm font-semibold text-white md:text-md">
             🔍 Key Testing
           </h1>
           <div className="mb-4">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 dark:text-neutral-300 md:text-sm">
+            <div className="flex items-center gap-2 text-xs  text-neutral-300 md:text-sm">
               + Functionality: Core features (project, attendance, stockpiles) work flawlessly.
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs  md:text-sm text-neutral-300">
               + Usability: Excellent user comfort; some areas for improvement.
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs  md:text-sm text-neutral-300">
               + Perfomance: Smooth across devices, no major issues.
             </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 text-xs  md:text-sm text-neutral-300">
               + API: Seamless communication between app/website and backend.
             </div>
           </div>

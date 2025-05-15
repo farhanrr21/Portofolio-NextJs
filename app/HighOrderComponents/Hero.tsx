@@ -23,8 +23,8 @@ const Hero = () => {
                     urlString='https://www.shadergradient.co/customize?animate=on&axesHelper=off&bgColor1=%23000000&bgColor2=%23000000&brightness=1&cAzimuthAngle=180&cDistance=2.8&cPolarAngle=80&cameraZoom=9.1&color1=%23802932&color2=%23dd828a&color3=%23212121&destination=onCanvas&embedMode=off&envPreset=city&format=gif&fov=45&frameRate=10&gizmoHelper=hide&grain=on&lightType=3d&pixelDensity=2&positionX=0&positionY=0&positionZ=0&range=enabled&rangeEnd=40&rangeStart=0&reflection=0.1&rotationX=50&rotationY=0&rotationZ=-60&shader=defaults&type=waterPlane&uAmplitude=0&uDensity=1.5&uFrequency=0&uSpeed=0.1&uStrength=1.5&uTime=8&wireframe=false'
                 />
             </ShaderGradientCanvas>
-            <div className='hidden md:flex absolute inset-0 flex-col justify-center items-start max-w-7xl mx-auto text-white '>
-                <h1 className='font-sans text-4xl my-4'>
+            <div className='hidden md:flex absolute inset-0 flex-col justify-center items-start max-w-7xl mx-auto  '>
+                <h1 className='font-sans text-4xl my-4 text-white'>
                     I&apos;m here to help turn your ideas
                 </h1>
 
@@ -34,7 +34,7 @@ const Hero = () => {
                     </h1>
                     <RotatingText
                         texts={['an Inspiring Product', 'an Innovative Apps', 'a Robust Software', 'an Amazing Service', 'an Elegant Design']}
-                        mainClassName="text-7xl font-sans font-bold mx-4"
+                        mainClassName="text-7xl font-sans font-bold mx-4 text-white"
                         staggerFrom={"last"}
                         initial={{ y: "100%" }}
                         animate={{ y: 0 }}
