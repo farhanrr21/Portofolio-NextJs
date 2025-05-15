@@ -29,7 +29,7 @@ const Hero = () => {
                 </h1>
 
                 <div className='flex flex-row min-h-24'>
-                    <h1 className='font-sans text-7xl'>
+                    <h1 className='font-sans text-7xl text-white'>
                         Into
                     </h1>
                     <RotatingText
