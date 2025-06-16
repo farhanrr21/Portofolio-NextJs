@@ -7,13 +7,13 @@ import Image from 'next/image'
 const Skill = () => {
     const images = [
     <div className="flex flex-row items-center gap-24 mr-24" key="image-1">
-        <Image src="flower.svg" height={40} width={40} alt="star" />
+        <Image src="images/flower.svg" height={40} width={40} alt="star" />
         <h1>Mobile Developer</h1>
-        <Image src="flower.svg" height={40} width={40} alt="star" />
+        <Image src="images/flower.svg" height={40} width={40} alt="star" />
         <h1>Software Engineer</h1>
-        <Image src="flower.svg" height={40} width={40} alt="star" />
+        <Image src="images/flower.svg" height={40} width={40} alt="star" />
         <h1>UI/UX Enthusiast</h1>
-        <Image src="flower.svg" height={40} width={40} alt="star" />
+        <Image src="images/flower.svg" height={40} width={40} alt="star" />
         <h1>Backend Developer</h1>
     </div>,
 ];

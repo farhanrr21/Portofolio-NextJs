@@ -43,7 +43,7 @@ const NavBar = () => {
                 <Image
                     height={100}
                     width={100}
-                    src={'/porto_logo.svg'}
+                    src={'images/porto_logo.svg'}
                     alt='logo'
                 />
 
@@ -65,7 +65,7 @@ const NavBar = () => {
                     className='ml-5'
                     height={60}
                     width={60}
-                    src={'/porto_logo.svg'}
+                    src={'images/porto_logo.svg'}
                     alt='logo'
                 />
 

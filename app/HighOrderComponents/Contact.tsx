@@ -90,7 +90,7 @@ const Contact = () => {
 
                     {/* Image */}
                     <Image
-                        src={'/contact_gradient.svg'}
+                        src={'images/contact_gradient.svg'}
                         alt='cover'
                         width={550}
                         height={500}

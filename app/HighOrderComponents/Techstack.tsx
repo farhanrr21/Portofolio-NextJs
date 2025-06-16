@@ -8,12 +8,12 @@ const Techstack = () => {
 
     const images = [
         <div className="flex flex-row h-32 " key="techstack">
-            <Image src="star.svg" className="p-8" alt="star" width={500} height={500} />
-            <Image src="react.svg" alt="Image 1" width={500} height={500} />
-            <Image src="star.svg" className="p-8" alt="star" width={500} height={500} />
-            <Image src="flutter.svg" className="p-4" alt="Image 3" width={500} height={500} />
-            <Image src="star.svg" className="p-8" alt="star" width={500} height={500} />
-            <Image src="kotlin.svg" className="p-4" alt="Image 5" width={500} height={500} />
+            <Image src="images/star.svg" className="p-8" alt="star" width={500} height={500} />
+            <Image src="images/react.svg" alt="Image 1" width={500} height={500} />
+            <Image src="images/star.svg" className="p-8" alt="star" width={500} height={500} />
+            <Image src="images/flutter.svg" className="p-4" alt="Image 3" width={500} height={500} />
+            <Image src="images/star.svg" className="p-8" alt="star" width={500} height={500} />
+            <Image src="images/kotlin.svg" className="p-4" alt="Image 5" width={500} height={500} />
         </div>,
     ];
 

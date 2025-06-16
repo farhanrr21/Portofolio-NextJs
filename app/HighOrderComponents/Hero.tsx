@@ -1,10 +1,14 @@
 'use client'
 import React from 'react'
 import RotatingText from '../animations/RotatingText'
-import { CiShare1 } from 'react-icons/ci'
+import { CiShare1, CiSaveDown2 } from 'react-icons/ci'
 import { ShaderGradient, ShaderGradientCanvas } from '@shadergradient/react'
 
 const Hero = () => {
+    const handleDownload = () => {
+        window.open('/documents/Resume_Farhan Ryan Rafli.pdf', '_blank'); // Opens the CV in a new tab
+    };
+
     return (
 
         <section id='hero' className='absolute top-0 w-full h-screen z-0'>
@@ -46,11 +50,18 @@ const Hero = () => {
                     />
                 </div>
 
+                <div className='flex flex-row gap-8'>
+                    <button onClick={() => { document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) }} className='flex flex-row gap-4 items-center my-12 text-center font-medium bg-white text-black rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300 px-8 py-4 shadow-xl shadow-black/55'>
+                        <span className='font-geist text-2xl'>Get in touch</span>
+                        <CiShare1 size={24}></CiShare1>
+                    </button>
 
-                <button onClick={() => { document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) }} className='flex flex-row gap-4 items-center my-12 text-center font-medium bg-white text-black rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300 px-8 py-4 shadow-xl shadow-black/55'>
-                    <span className='font-geist text-2xl'>Get in touch</span>
-                    <CiShare1 size={24}></CiShare1>
-                </button>
+                    <button onClick={() => { handleDownload() }} className='flex flex-row gap-4 items-center my-12 text-center font-medium text-white border-white border-2 rounded-full transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300 px-8 py-4 shadow-xl shadow-black/55'>
+                        <span className='font-geist text-2xl'>Resume</span>
+                        <CiSaveDown2 size={24}></CiSaveDown2>
+                    </button>
+                </div>
+
             </div>
         </section>
     )
