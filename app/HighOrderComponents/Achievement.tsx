@@ -14,8 +14,8 @@ const Achievement = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 h-full w-full gap-16 px-16 items-center'>
                 <SpotlightCard className="w-full h-full flex flex-col gap-4 2xl:gap-5" spotlightColor="rgba(255, 255, 255, 0.1)">
                     <div className='h-1/2 w-auto rounded-xl overflow-hidden mb-4'>
-                        <Image
-                            src={'/vhack.png'}
+                        <img
+                            src={'images/vhack.png'}
                             height={500}
                             width={500}
                             alt='logo'
@@ -40,8 +40,8 @@ const Achievement = () => {
 
                 <SpotlightCard className="w-full h-full flex flex-col gap-4 2xl:gap-5" spotlightColor="rgba(255, 255, 255, 0.1)">
                     <div className='h-1/2 w-auto rounded-xl overflow-hidden mb-4'>
-                        <Image
-                            src={'/fordigi.jpg'}
+                        <img
+                            src={'images/fordigi.jpg'}
                             height={500}
                             width={500}
                             alt='logo'

@@ -102,8 +102,8 @@ const About = () => {
                     damping: 10
                 }}
                 className='absolute inset-0 flex items-center justify-center'>
-                <Image className='w-sm md:w-md h-auto z-0'
-                    src="/about_bg.png"  // Path to image inside the public folder
+                <img className='w-sm md:w-md h-auto z-0'
+                    src="images/about_bg.png"  // Path to image inside the public folder
                     alt="Logo"
                     width={494}       // Width original
                     height={725}       // Height Original   
