@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { Afacad, Actor } from 'next/font/google'
-import Image from 'next/image'
 import GradientText from '../animations/GradientText'
 import SpotlightCard from '../animations/SpotlightCard'
 import { FiCodesandbox, FiSlack } from 'react-icons/fi'
